@@ -24,7 +24,8 @@ class AuthenticatedSessionController extends Controller
         if(Auth::attempt($credentials)) {
             return response()->json([
                 'token' => Auth::user()->createToken('donasi')->plainTextToken,
-                'status' => 'success login',
+                'status' => 200,
+                'message' => 'berhasil login',
                 'data' => $credentials,
                 
             ]);
