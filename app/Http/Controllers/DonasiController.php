@@ -66,7 +66,6 @@ class DonasiController extends Controller
                 'message' => 'berhasil ditambah',
                 'data' => [
                     'donasi' => $item,
-                    'user' => $item->user
                 ]
             ]);
         

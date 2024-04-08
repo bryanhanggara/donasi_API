@@ -39,7 +39,9 @@ class RegisteredUserController extends Controller
         $token = $user->createToken('donasi')->plainTextToken;
 
         return response()->json([
-            'token' => $token
+            'token' => $token,
+            'status' => 'Berhasil daftar',
+            'data' => $user 
         ]);
     }
 }
