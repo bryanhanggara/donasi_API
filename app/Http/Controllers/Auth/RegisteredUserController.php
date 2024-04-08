@@ -41,7 +41,7 @@ class RegisteredUserController extends Controller
         return response()->json([
             'token' => $token,
             'status' => 200,
-            'message' => 'berhasil daftar',
+            'message' => 'berhasil daftar akun',
             'data' => $user 
         ]);
     }

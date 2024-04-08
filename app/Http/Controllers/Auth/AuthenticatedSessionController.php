@@ -25,7 +25,7 @@ class AuthenticatedSessionController extends Controller
             return response()->json([
                 'token' => Auth::user()->createToken('donasi')->plainTextToken,
                 'status' => 200,
-                'message' => 'berhasil login',
+                'message' => 'berhasil login akun',
                 'data' => $credentials,
                 
             ]);
